@@ -5,6 +5,8 @@
         <classes>
             <class name="Login"/>
             <class name="Register"/>
+            <class name="ForgetPassword"/>
+
         </classes>
     </test>
 </suite>
