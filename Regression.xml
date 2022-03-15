@@ -10,7 +10,7 @@
             <class name="CreateOrder"/>
             <class name="ForgetPassword"/>
             <class name="ChangeBetweenDollarAndUro"/>
-
+            <class name="diffrentTags"/>
 
 
 
