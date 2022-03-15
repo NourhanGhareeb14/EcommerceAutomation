@@ -8,6 +8,9 @@
              <class name="SearchProduct"/>
             <class name="AddToCart"/>
             <class name="CreateOrder"/>
+            <class name="ForgetPassword"/>
+            <class name="ChangeBetweenDollarAndUro"/>
+
 
 
 
