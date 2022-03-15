@@ -16,22 +16,22 @@ public class ForgetPasswordModal {
         PageFactory.initElements(driver,this);
     }
 
-
-
-    public WebElement emailElement ( ) {
-        By email=By.id("forgotForm");
-        WebElement emailElement=  driver.findElement(email);
-        return emailElement;
+    public WebElement usernameElement ( ) {
+        By username=By.xpath("(//input[@type=\"email\"])");
+        WebElement  usernameElement=  driver.findElement(username);
+        return usernameElement;
     }
+
+
     public void forgetSteps( String email ){
 
         ////// //Enter all values using design Pom
-        emailElement().sendKeys(email);
+         usernameElement().sendKeys(email);
 
       //  emailElement().clear();
 
 
-        emailElement().sendKeys(Keys.ENTER);
+        usernameElement().sendKeys(Keys.ENTER);
 
 
 

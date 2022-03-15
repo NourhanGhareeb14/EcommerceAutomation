@@ -28,9 +28,11 @@ public class ForgetPassword {
     }
     @Test
     public void validData  () throws InterruptedException {
-        driver.navigate().to("https://garnell-fe-git-search-notfound-id-clevershop.vercel.app/");
-        driver.findElement(By.className("jss41")).click();
-        Thread.sleep(4000);
+        driver.navigate().to("https://garnell-fe.vercel.app/login");
+        Thread.sleep(2000);
+
+        driver.findElement(By.id("forgotQues")).click();
+        Thread.sleep(2000);
         forgetPassword.forgetSteps("nourhanghareeb1@gmail.com");
 
         Thread.sleep(4000);

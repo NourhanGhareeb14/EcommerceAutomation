@@ -5,8 +5,7 @@
         <classes>
             <class name="Login"/>
             <class name="Register"/>
-            <class name="ForgetPassword"/>
-            <class name="SearchProduct"/>
+             <class name="SearchProduct"/>
             <class name="AddToCart"/>
             <class name="CreateOrder"/>
 
