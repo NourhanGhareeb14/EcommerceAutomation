@@ -12,6 +12,8 @@
             <class name="ChangeBetweenDollarAndUro"/>
             <class name="diffrentTags"/>
             <class name="ChangeCategory"/>
+            <class name="FilterByColor"/>
+
 
 
 
