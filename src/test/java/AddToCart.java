@@ -30,14 +30,12 @@ public class AddToCart {
         login=new LoginPage(driver);
 
     }
-    //logged user can add to cart
+    //logged user can add to cart then remove
     @Test
     public void validData  () throws InterruptedException {
         driver.navigate().to("https://garnell-fe.vercel.app/login");
-
         login.loginSteps("nourhanghareeb1@gmail.com","123456");
         Thread.sleep(4000);
-
          driver.navigate().to("https://garnell-fe.vercel.app/product/61f9118eb90e7e51297b5fba");
         Thread.sleep(2000);
          driver.findElement(By.id("addtoCart_productDetails")).click();
@@ -53,12 +51,29 @@ public class AddToCart {
         System.out.println(actualResult2);
         Assert.assertEquals(actualResult2.contains(expecetedResult2),true);
 
-        //  Thread.sleep(2000);
-
-
-         //Assert.assertEquals(driver.getCurrentUrl(),"https://garnell-fe.vercel.app/");
-
     }
+
+
+//Increase the quantity of the item from the cart and verify.
+    @Test
+    public void invalidData  () throws InterruptedException {
+        driver.navigate().to("https://garnell-fe.vercel.app/login");
+        login.loginSteps("nourhanghareeb1@gmail.com","123456");
+        Thread.sleep(2000);
+        driver.navigate().to("https://garnell-fe.vercel.app/product/61f9118eb90e7e51297b5fba");
+        Thread.sleep(4000);
+        driver.findElement(By.id("addtoCart_productDetails")).click();
+        Thread.sleep(2000);
+         driver.findElement(By.cssSelector("[aria-label='Increase Value']")).click();
+        String expecetedResult  ="2";
+        String actualResult = driver.findElement(By.className("circle")).getText();
+        System.out.println(actualResult);
+        Thread.sleep(2000);
+       Assert.assertEquals(actualResult.contains(expecetedResult),false);
+        Thread.sleep(2000);
+      }
+
+
 
     @AfterTest
     public void closeDriver () {
