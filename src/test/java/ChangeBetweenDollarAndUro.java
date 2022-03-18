@@ -39,8 +39,12 @@ public class ChangeBetweenDollarAndUro {
         Select Currency2 = new Select(driver.findElement(By.id("customerCurrency")));
         Currency2.selectByVisibleText("US Dollar");
         Thread.sleep(2000);
-      //  Assert.assertEquals(driver.getCurrentUrl(),"https://garnell-fe.vercel.app/");
+      // Assert.assertEquals(driver.getCurrentUrl(),"https://garnell-fe.vercel.app/");
 
+
+        String expecetedResult = "US Dollar";
+        String actualResult =driver.findElement(By.id("customerCurrency")).getText();
+        Assert.assertEquals(actualResult.contains(expecetedResult),true);
     }
 
 
