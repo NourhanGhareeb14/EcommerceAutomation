@@ -11,8 +11,7 @@ Test creat order on https://garnell-fe.vercel.app/
 
 Test forget password on https://garnell-fe.vercel.app/ 
 
-Test SC6- Logged user could select different Categories////////////////////////////
-
+ 
 
 
 
@@ -29,7 +28,9 @@ Test SC10- Logged user could add different products to Wishlist
  
  Test SC7- Logged user could filter with color
  
+ Test SC6- Logged user could select different Categories
+ 
  Test SC5- Logged User could switch between currencies US-Euro
 
 
-
+all test done by junit 
