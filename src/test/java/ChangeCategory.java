@@ -32,8 +32,8 @@ public class ChangeCategory {
         driver.findElement(By.xpath("//*[text()='Digital downloads ']")).click();
         Assert.assertEquals(driver.getCurrentUrl(),"https://demo.nopcommerce.com/digital-downloads");
         Thread.sleep(2000);
-        driver.navigate().to("https://demo.nopcommerce.com/");
-        Thread.sleep(2000);
+       // driver.navigate().to("https://demo.nopcommerce.com/");
+       // Thread.sleep(2000);
         driver.findElement(By.xpath("//*[text()='Jewelry ']")).click();
         Assert.assertEquals(driver.getCurrentUrl(),"https://demo.nopcommerce.com/jewelry");
 
